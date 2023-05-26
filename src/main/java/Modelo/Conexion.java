@@ -19,6 +19,10 @@ public class Conexion {
     public Conexion() {
 try {
     con = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);}
-}
+} catch (Exception e) {
+System.err.println("ERROR: "+e);}
+
+public Connection getConnection() {
+return con;}
 
 }
