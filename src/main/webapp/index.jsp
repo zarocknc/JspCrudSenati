@@ -14,7 +14,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hola xd</h1>
+        
         
         
     </body>
