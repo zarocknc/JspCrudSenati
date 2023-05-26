@@ -17,12 +17,14 @@ public class Conexion {
     private static final String JDBC_USER = "sql10621360";
     private static final String JDBC_PASSWORD = "t7ed9uJXTn";
     public Conexion() {
-try {
-    con = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);}
-} catch (Exception e) {
-System.err.println("ERROR: "+e);}
+        try {
+           con = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
+        } catch (Exception e) {
+            System.err.println("ERROR: "+e);
+        }
+}
 
-public Connection getConnection() {
-return con;}
-
+        public Connection getConnection() {
+            return con;
+        }
 }
